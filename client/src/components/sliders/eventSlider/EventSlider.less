@@ -1,0 +1,88 @@
+@backgroundColor: #ffffffe8;
+@borderColor: #565656d6;
+@imgBorderColor: #FFFFFF;
+@shadowColor: #00000033;
+@priceColor: #008000;
+@font: "Montserrat";
+
+.prev-next {
+
+    .slick-slide {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        align-content: space-around;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .slick-current {
+
+        .event-card {
+            width: 340px;
+            height: 480px;
+            padding-bottom: 40px;
+            flex-direction: column;
+            font-family: @font;
+
+            img {
+                box-shadow: 0 4px 8px 0 @shadowColor;
+                opacity: 81%;
+                width: 100%;
+                border-radius: 10px;
+                margin: 0;
+            }
+
+            .event-info {
+
+                h2 {
+                    font-size: 36px;
+                    color: #212121;
+                    padding: 20px;
+                    justify-content: center;
+                    border-bottom: none;
+                    height: 48px;
+                    display: flex;
+                    text-align: center;
+                    font-family: @font;
+                }
+
+                .description {
+                    display: block;
+                    margin: 5px;
+                    text-align: center;
+
+                    p {
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family: sans-serif;
+                    }
+                }
+
+                .day-time {
+                    font-size: 36px;
+                    justify-content: space-around;
+                    margin-top: 30px;
+
+                    .day {
+                        height: 40px;
+                        border-right: 4px solid @shadowColor;
+                        display: flex;
+                        align-items: center;
+                        font-weight: bold;
+                        padding-right: 21px;
+                    }
+
+                    .time {
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        border: none;
+                        margin-left: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

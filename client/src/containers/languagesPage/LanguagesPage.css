@@ -1,0 +1,55 @@
+.languages-page {
+  background-image: url("../../assets/images/background/background_categories.svg");
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-size: 110%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+.languages-page .logo {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+.languages-page .logo img {
+  width: 70vh;
+  height: 30vh;
+  margin-bottom: 112px;
+}
+.languages-page .main {
+  display: flex;
+  justify-content: space-evenly;
+}
+.languages-page .main .languages-type {
+  height: 40px;
+}
+.languages-page .main a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.languages-page .main a:hover {
+  opacity: 0.5;
+}
+.languages-page .main a:hover .dot {
+  display: block;
+}
+.languages-page .main h1 {
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bolder;
+}
+.languages-page .main .dot {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+  margin: auto;
+  display: none;
+}
+/*# sourceMappingURL=LanguagesPage.css.map */

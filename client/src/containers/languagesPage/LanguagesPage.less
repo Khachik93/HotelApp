@@ -1,0 +1,64 @@
+@font: "Montserrat";
+
+.languages-page {
+    background-image: url("../../assets/images/background/background_categories.svg");
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-size: 110%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+
+    .logo {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        img {
+            width: 70vh;
+            height: 30vh;
+            margin-bottom: 112px;
+        }
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+        .languages-type{
+            height: 40px;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        a:hover {
+            opacity: 0.5;
+            .dot{
+                display: block;
+            }
+        }
+
+        h1 {
+            font-family: @font;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            color: white;
+            border-radius: 50%;
+            margin: auto;
+            display: none;
+        }
+
+    }
+}
